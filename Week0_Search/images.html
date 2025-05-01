@@ -1,1 +1,22 @@
+<!DOCTYPE html> <!-- Assigned to HTML -->
+<html lang="en"> <!-- Language -->
+    <head> <!-- Head -->
+        <meta charset="UTF-8"> <!-- Meta, define the type of the charset that the user can use -->
+        <title>Images</title> <!-- Title -->
+        <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file for styling -->
+    </head>
+    <body> <!-- Body of the page, what the user will see -->
+        <div class="nav"> <!-- Navigation links to other pages -->
+            <a href="index.html">Search</a>
+            <a href="images.html">Images</a>
+            <a href="advanced.html">Advanced Search</a>
+        </div>
 
+        <!-- Search form that sends query to Google, defines where the data the user writes will go -->
+        <form action="https://www.google.com/search" method="get">
+            <input type="hidden" name="tbm" value="isch"> <!-- Hidden input to indicate image search -->
+            <input type="text" name="q" placeholder="Search images..."> <!-- Input field where the user types the search query -->
+            <input type="submit" value="Google Search"> <!-- Submit button to perform the search -->
+        </form>
+    </body>
+</html>
