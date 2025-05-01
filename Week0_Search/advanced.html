@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Advanced Search</title>
+        <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+    </head>
+    <body>
+        <!-- Navigation links to other pages -->
+        <div class="nav">
+            <a href="index.html">Search</a>
+            <a href="images.html">Images</a>
+            <a href="advanced.html">Advanced Search</a>
+        </div>
 
+        <!-- Advanced Search Form -->
+        <form action="https://www.google.com/search" method="get">
+            <fieldset>
+                <legend>Advanced Search</legend>
+
+                <!-- All these words -->
+                <label>
+                    All these words:<br>
+                    <input type="text" name="as_q">
+                </label>
+                <br><br>
+
+                <!-- This exact word or phrase -->
+                <label>
+                    This exact word or phrase:<br>
+                    <input type="text" name="as_epq">
+                </label>
+                <br><br>
+
+                <!-- Any of these words -->
+                <label>
+                    Any of these words:<br>
+                    <input type="text" name="as_oq">
+                </label>
+                <br><br>
+
+                <!-- None of these words -->
+                <label>
+                    None of these words:<br>
+                    <input type="text" name="as_eq">
+                </label>
+                <br><br>
+
+                <!-- Submit button -->
+                <input type="submit" value="Advanced Search">
+            </fieldset>
+        </form>
+    </body>
+</html>
